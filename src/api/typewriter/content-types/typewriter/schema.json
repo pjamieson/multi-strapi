@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "typewriters",
+  "info": {
+    "singularName": "typewriter",
+    "pluralName": "typewriters",
+    "displayName": "Typewriter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
+    },
+    "model": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::model.model"
+    },
+    "sn": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "keyboard": {
+      "type": "string"
+    },
+    "typeface": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "footprint": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "order": {
+      "type": "integer"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "feature": {
+      "type": "boolean"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    }
+  }
+}

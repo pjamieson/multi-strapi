@@ -2,7 +2,7 @@
   "name": "multi-strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Strapi CMS backend for iArtX and UltraPortableTypewriters sites",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,13 +11,14 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.10.5",
-    "@strapi/plugin-users-permissions": "4.10.5",
     "@strapi/plugin-i18n": "4.10.5",
+    "@strapi/plugin-users-permissions": "4.10.5",
+    "@strapi/provider-upload-aws-s3": "^4.10.5",
+    "@strapi/strapi": "4.10.5",
     "pg": "8.8.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Patrick Jamieson <patrick@patrickjamieson.com>"
   },
   "strapi": {
     "uuid": "e3c70919-ac13-4418-b1ca-cab7715c7067"
