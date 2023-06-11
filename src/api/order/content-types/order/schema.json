@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stripe_payment_id": {
+      "type": "string"
+    },
+    "subtotal": {
+      "type": "decimal"
+    },
+    "salestax": {
+      "type": "decimal"
+    },
+    "shipping": {
+      "type": "decimal"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "newsletter": {
+      "type": "boolean"
+    },
+    "note": {
+      "type": "string"
+    },
+    "typewriters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::typewriter.typewriter"
+    },
+    "cart": {
+      "type": "text"
+    }
+  }
+}

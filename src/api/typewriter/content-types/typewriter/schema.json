@@ -53,14 +53,15 @@
       "type": "decimal"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "order": {
       "type": "integer"
@@ -76,6 +77,9 @@
     },
     "header": {
       "type": "string"
+    },
+    "weightoz": {
+      "type": "integer"
     }
   }
 }
