@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paintings",
+  "info": {
+    "singularName": "painting",
+    "pluralName": "paintings",
+    "displayName": "Painting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "creators": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::creator.creator"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "date": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "form": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "iamges": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genre.genre"
+    },
+    "qty": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "archive": {
+      "type": "boolean"
+    },
+    "feature": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "enumeration",
+      "enum": [
+        "Blake",
+        "iArtX"
+      ]
+    }
+  }
+}

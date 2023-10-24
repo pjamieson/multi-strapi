@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "special": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::creator.creator"
+    },
+    "isbn": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "pubplace": {
+      "type": "string"
+    },
+    "pubyear": {
+      "type": "string"
+    },
+    "pubstring": {
+      "type": "string"
+    },
+    "binding": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "condition": {
+      "type": "richtext"
+    },
+    "isAsNew": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "pagecount": {
+      "type": "integer"
+    },
+    "weightoz": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genre.genre"
+    },
+    "feature": {
+      "type": "boolean"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "enumeration",
+      "enum": [
+        "iArtX",
+        "iBookX",
+        "UltraportableTypewriters"
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "creators",
+  "info": {
+    "singularName": "creator",
+    "pluralName": "creators",
+    "displayName": "Creator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lastname": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "aka": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "birth": {
+      "type": "string"
+    },
+    "death": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imagecredit": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "biocredit": {
+      "type": "richtext"
+    },
+    "publications": {
+      "type": "richtext"
+    },
+    "countries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::country.country"
+    }
+  }
+}
