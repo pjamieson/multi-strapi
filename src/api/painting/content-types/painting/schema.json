@@ -38,7 +38,7 @@
     "medium": {
       "type": "string"
     },
-    "iamges": {
+    "images": {
       "type": "media",
       "multiple": true,
       "required": false,

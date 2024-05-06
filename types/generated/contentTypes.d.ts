@@ -1051,7 +1051,7 @@ export interface ApiPaintingPainting extends Schema.CollectionType {
     size: Attribute.String;
     form: Attribute.String;
     medium: Attribute.String;
-    iamges: Attribute.Media;
+    images: Attribute.Media;
     description: Attribute.RichText;
     genres: Attribute.Relation<
       'api::painting.painting',
