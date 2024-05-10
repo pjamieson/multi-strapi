@@ -4,7 +4,8 @@
   "info": {
     "singularName": "creator",
     "pluralName": "creators",
-    "displayName": "Creator"
+    "displayName": "Creator",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,14 +31,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imagecredit": {
       "type": "string"
@@ -55,6 +57,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::country.country"
+    },
+    "isAuthor": {
+      "type": "boolean"
+    },
+    "isArtist": {
+      "type": "boolean"
     }
   }
 }

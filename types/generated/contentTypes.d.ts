@@ -944,6 +944,7 @@ export interface ApiCreatorCreator extends Schema.CollectionType {
     singularName: 'creator';
     pluralName: 'creators';
     displayName: 'Creator';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -965,6 +966,8 @@ export interface ApiCreatorCreator extends Schema.CollectionType {
       'oneToMany',
       'api::country.country'
     >;
+    isAuthor: Attribute.Boolean;
+    isArtist: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
