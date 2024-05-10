@@ -100,6 +100,9 @@
         "iBookX",
         "UltraportableTypewriters"
       ]
+    },
+    "qty": {
+      "type": "integer"
     }
   }
 }
